@@ -1,0 +1,71 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-left-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left-items img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-left-items h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.navbar-center-items {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-center-items input {
+    width: 50%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.navbar-right-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right-items button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.navbar-right-items button:hover {
+    background-color: #0056b3;
+}
+
+.navbar-right-items img {
+    height: 40px;
+    width: 70px; /* Ensure the avatar is a perfect circle */
+    border-radius: 50%;
+    margin-left: 1px; /* Reduced margin to move it to the left */
+    cursor: pointer;
+    border: 2px solid #007BFF; /* Add a border to make it stand out */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
