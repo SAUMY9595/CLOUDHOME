@@ -10,7 +10,10 @@ const verifyToken = require("./middlewares/verifyToken.js");
 const fileRouter = require("./routes/fileRoutes.js");
 
 const app = express();
-app.use(cors({ origin: true }));
+app.use(cors({ 
+    origin: ["https://cloudhome-tau.vercel.app", "http://localhost:3000"],
+    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
