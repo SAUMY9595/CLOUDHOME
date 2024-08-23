@@ -1,4 +1,4 @@
-const cloudinary = require("../config/cloudinary");
+// const cloudinary = require("../config/cloudinary");
 const FileFolderModel = require("../model/fileSchema");
 const fsPromises = require("fs/promises");
 
